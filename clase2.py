@@ -5,9 +5,11 @@ def cargar():
     while continua == "s":
         codigo=int(input("ingrese su codigo"))
         nombre = input("ingrese su nombre")
-        edad= int("ingrese su edad")
+        edad= int(input("ingrese su edad"))
         amigo[codigo]=(nombre, edad)
+
         # amigo= {codigo, nombre, edad} igual a linea anterior
+        
         continua=input("desea continuar s/n")
         continua=continua.lower()
         print(continua)
