@@ -14,16 +14,14 @@ def cargar():
     return amigo
 
 
-
 def imprimir(ami):  
+    for k, v in ami.items(): 
+        print(f"{k}:{v}")
 
 
-def main():
+def inicio():
     amigos = cargar()
     imprimir(amigos)
 
-
-
-
 if __name__== "__main__": #inicio del programa 
-    main()
+    inicio()
