@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'apps.autos',
     'apps.clientes',
     'apps.mecanicos',
+    'apps.autosNuevos',
+    'apps.autosUsados',
+    'apps.reparaciones',
 ]
 
 MIDDLEWARE = [
