@@ -1,5 +1,6 @@
 from django.db import models
 from apps.mecanicos.models import Mecanicos
+from concesionario.apps.clientes.models import Clientes
 from concesionario.apps.mecanicos.models import Mecanicos
 # Create your models here.
 class Autos(models.Model):
@@ -8,5 +9,5 @@ class Autos(models.Model):
     marca = models.CharField(max_length=100)
     color = models.CharField(max_length=100)
     mecanicos = models.ManyToManyField(Mecanicos)
-    fechaReparacion = models.DateField (max_length=10)
-    horasReparacion = models.DateTimeField(max_length=10)
+    Clientes = models.ForeignKey(Clientes)
+   
